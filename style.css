@@ -1,0 +1,73 @@
+body {
+     font-family: Helvetica;
+	 background-image:url('images/logo.png');
+	 background-size: 250px;
+	 background-repeat: no-repeat;
+	 background-color: #DAFFEC; 
+	 background-attachment: fixed;
+	 background-position: right bottom;
+}
+
+h5{
+     font-size: 14px;
+     font-weight: normal;
+}
+
+table{
+	 font-family:Helvetica;
+     border-width: 1px;
+     border-style: solid;
+     
+     border-collapse:collapse;
+     align: left;
+     width: 70%;     
+}
+
+th{
+	font-family:Helvetica;
+	text-align = center;
+}
+
+td{
+     text-align: left;   
+}
+
+a:link {
+    color: #434f7b;
+}
+
+a:visited {
+    color: #4b9484;
+}
+
+a:hover {
+    color: #f9a799;
+}
+
+
+div.floating-menu {
+	position:fixed;
+	background:#DAFFEC;
+	border:3px solid #ffcc00;
+	width:125px;
+	right :10px;
+	z-index: 1;
+	}
+
+div.floating-menu a, 
+div.floating-menu h3 {
+	display:block;
+	margin:0 0.5em;
+	}
+
+hr {
+	width: 75% ;
+	margin-left : 0;
+	text-align: left;
+	}
+
+
+
+
+
+

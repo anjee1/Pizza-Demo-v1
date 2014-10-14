@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- IT207 C01 Tetis Chang & Abdul Jabbar Group Project-->
+
+<!--This page will get the admin's input for a new product and send that 
+input to newProduct.php to add a new record in the PRODUCT table-->
+<head>
+<title>Add Product</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+	<!--Side Menu-->
+	<div class="floating-menu">
+	<a href="pizzeria.php">Pizzeria List</a>
+	<a href="pizzaOption.php">Pizza Options</a>
+	<a href="order.html">Order Pizza</a><br />
+	<h3>Admin Account</h3>
+	<a href="addPizzeria.html">Add New Pizzeria</a><br />
+	<h3>Site</h3>
+	<a href ="store.php">Home</a>
+	<a href="search.php">Search</a>
+	<a href="about.html">About Us</a>
+	<a href="contactUs.html">Contact</a>
+	</div>
+	<!--Page heading-->
+	<h1>Add Product</h1>
+	<hr />
+	<p>Please enter your account information below:</p>
+	<!-- Form for admin to add new Product to the database-->
+		<form action="newPizzeria.php" method="post">
+			<h4>Pizzeria Information</h4>
+			<p>Pizzeria ID <input type="text" name="id" required size="5" /><br />
+			Name (ex. Pizza Hut)<input type="text" name="name" required size="50" /><br />
+			Address <input type="text" name="add" required size="50"/><br />
+			PhoneNumber <input type="text" name="num" required size="13" /><br />
+			Distance (miles)<input type="text" name="distance" required size="5"/><br />
+			<br />
+			<input type="submit" value="Add Pizzeria"/>
+			<input type="reset" value="Reset Form" />
+		</form>
+		<hr />
+</body>
+</html>

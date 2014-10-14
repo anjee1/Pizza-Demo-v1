@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- IT207 C01 Tetis Chang & Abdul Jabbar Group Project-->
+
+<!--This site will take two inputs from the user: username and password. It will
+send the inputs to logCheck.php to verify the user exists and log the user in-->
+<head>
+<title> Login </title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+	<!--Side Menu-->
+	<div class="floating-menu">
+	<h3>Products</h3>
+	<a href="laptops.php">Laptops</a>
+	<a href="tablet.php">Tablet</a>
+	<a href="accessories.php">Accessories</a><br />
+	<h3>Customer Account</h3>
+	<a href="login.html">Login</a>
+	<a href="createAccount.html">New User</a><br />
+	<h3>Site</h3>
+	<a href="search.php">Search</a>
+	<a href="about.html">About Us</a>
+	<a href="contactUs.html">Contact</a>
+	</div>
+	<!--Page Heading-->
+	<h1>Login</h1>
+	<hr />
+	<!-- Form for user to enter username and password to access account-->
+	<form method="post" action="logCheck.php">
+		<p>Username <input type="text" name="username" required size="20" /><br /><br />
+		Password <input type="password" name="password" required size="20"/><br /><br />
+		<input type="submit" name="Login" /></p>
+	</form>
+	<hr />
+</body>
+</html>

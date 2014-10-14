@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- IT207 C01 Tetis Chang & Stephanie Olson-->
+
+<!--This page will allow a visitor to make an account. The information will be sent to
+newAccount.php to be verified and sent to the table in MySQL database -->
+
+<head>
+<title>Create Account</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+	<!--Side Menu-->
+	<div class="floating-menu">
+	<h3>Products</h3>
+	<a href="pizzeria.php">Pizzeria List</a>
+	<a href="pizzaOption.php">Pizza Options</a>
+	<a href="order.html">Order Pizza</a><br />
+	<h3>Customer Account</h3>
+	<a href="login.html">Login</a>
+	<a href="createAccount.html">New User</a><br />
+	<h3>Site</h3>
+	<a href ="store.php">Home</a>
+	<a href="search.php">Search</a>
+	<a href="about.html">About Us</a>
+	<a href="contactUs.html">Contact</a>
+	</div>
+	<h1>New User</h1>
+	<hr />
+
+	<p>Please enter your account information below:</p>
+	<!-- Form for user to enter username and password to access account-->
+	<form action="newAccount.php" method="post">
+		<h4>Account Information</h4>
+		Username <input type="text" name="un" required size="20" /><br />
+		Password <input type="password" name="pw" required size="20"/><br />
+		<h4>Name</h4>
+		First Name <input type="text" name="fname" required size="20"/><br />
+		Last Name <input type="text" name="lname" required size="20"/><br />
+		<h4>Address</h4>
+		Address 1 <input type="text" name="address1" required size="20"/><br />
+		Apt/Suite No. <input type="text" name="address2" size="20"/><br />
+		City <input type="text" name="city" required size="20"/><br />
+		State <input type="text" name="state" required size="2"/><br />
+		Zip <input type="text" name="zip" required size="5"/><br />
+		<h4>Contact Information</h4>
+		Email <input type="text" name="email" required size="20"/><br />
+		Phone <input type="text" name="phone" required size="13"/><br />
+		<h4>Payment Information</h4>
+		Credit Card <select name="cardType" >
+			<option>Visa</option>
+			<option>MasterCard</option>
+			<option>Amex</option>
+			<option>Discover</option>
+		</select><br />
+		Card Number <input type="text" name="cardNum" required size="20"/><br />
+		Expiration Date <input type="text" name="expDate" required size="13"/><br />
+		<br />
+		<input type="submit" value="Create Account"/>
+		<input type="reset" value="Reset Form" />
+	</form>
+	<hr />
+
+</body>
+</html>

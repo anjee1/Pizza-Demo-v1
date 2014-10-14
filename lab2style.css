@@ -1,0 +1,38 @@
+body {
+     font-family: Helvetica;
+     background-color: #ccccff;    
+}
+
+h5{
+     font-size: 14px;
+     font-weight: normal;
+}
+
+table{
+	font-family: Helvetica;
+     border-width: 1px;
+     border-style: solid;
+     border-color: blue;
+     border-collapse:collapse;
+     align: center;
+     width: 100%;     
+}
+td{
+     border: 1px solid black;
+     text-align: center;
+     width: 50%;
+}
+
+a:link {
+    color: #434f7b;
+}
+
+a:visited {
+    color: #4b9484;
+}
+
+a:hover {
+    color: #f9a799;
+}
+
+
